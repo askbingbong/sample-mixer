@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sample Mixer</title>
+  <meta name="description" content="Chop samples out of songs and arrange them into your own tracks. Works offline.">
+  <meta name="theme-color" content="#0e1014">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Sample Mixer">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <main id="main">
+      <section id="view-library" class="view" aria-label="Library"></section>
+      <section id="view-sample" class="view" aria-label="Sample editor"></section>
+      <section id="view-track" class="view fill" aria-label="Track editor"></section>
+    </main>
+    <nav id="tabbar" aria-label="Main"></nav>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>This app needs JavaScript.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
